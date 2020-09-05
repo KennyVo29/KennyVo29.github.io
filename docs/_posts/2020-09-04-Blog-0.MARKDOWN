@@ -23,7 +23,7 @@ It came with:
     -Heat Sinks for components
     -Its running a 64-bit quad core processor @ 1.5 Ghz !!
 
-![Raspberry Pi 4 - Canakit](/assets/images/img1.jpg){:class="img-responsive"} ![Raspberry Pi 4 - Canakit](/assets/images/img2.jpg){:class="img-responsive"}
+![image](/assets/images/img1.jpg)![image](/assets/images/img2.jpg)
 
 
 
