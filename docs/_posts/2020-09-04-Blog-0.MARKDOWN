@@ -5,6 +5,14 @@ date:   2020-09-04 12:03:41 -0700
 categories: jekyll update
 ---
 
-BLOG POST 0:
+BLOG POST 0: 
 
-TEST TEST
+Setting up a Raspberry Pi and connecting remotely with SSH.
+
+This is how you set up a Raspberry Pi for the first time and how you can connect to the Raspberry Pi using Secure Shell protocol.
+What is a Raspberry Pi?
+A raspberry pi is a small computer about the size of a wallet or credit card. It is extremely cost efficient as it has all the necessary components to support a operating system.  
+
+First, you would need to purchase a Raspberry Pi. I purchased a Raspberry Pi starter kit from CanaKit on Amazon. It came with
+
+
