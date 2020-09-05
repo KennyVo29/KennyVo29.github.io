@@ -16,17 +16,17 @@ A raspberry pi is a small computer about the size of a wallet or credit card. It
 What is Secure Shell?
 Secure Shell is a software/package that allows users to safely transfer files over insecure networks. SSH encrypts the data that is being sent over the internet (ethernet) between machines. If you were an outside party, you can see if the data is being transferred, how much data it contains, how often it's being sent but you can't see the content of the data at all. You essentially have a private channel of communication with the both machines. When connecting two machines over SSH, you must first open a TCP connection between the two. 
 
-First, you would need to purchase a Raspberry Pi. I purchased a CanaKit Raspberry Pi 4 - 4GB starter kit from CanaKit on Amazon for $99. You can find it here --> https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9
+First, you would need to purchase a Raspberry Pi. I purchased a CanaKit Raspberry Pi 4 - 4GB starter kit from CanaKit on Amazon for $99. You can find it here --> (https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9)
 It came with:
--Raspberry Pi 4
--Samsung Evo+ 32GB Micro SD Card
--Case (mini tower)
--Power Supply (on/off switch)
--Micro HDMI to HDMI cable 
--Heat Sinks for components
--Its running a 64-bit quad core processor @ 1.5 Ghz !!
+- Raspberry Pi 4
+- Samsung Evo+ 32GB Micro SD Card
+- Case (mini tower)
+- Power Supply (on/off switch)
+- Micro HDMI to HDMI cable 
+- Heat Sinks for components
+- Its running a 64-bit quad core processor @ 1.5 Ghz !!
 
-If you purchased this product you can follow the instructs located here [Manual / instructions] --> https://www.canakit.com/Media/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf
+If you purchased this product you can follow the instructs located here [Manual / instructions] --> (https://www.canakit.com/Media/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf)
 When you first boot the Raspberry Pi, you should be prompted to install an RB Operating System. Go ahead and select the Full OS version and click install. Once you finish installing the OS, it should allow you to boot into your computer. Once inside, you should be prompted again to finish some final steps to ensure your device is up and running. It will ask you for your country of origin, language, time zone, keyboard, password, network, software update. 
 
 AFter getting your Raspberry Pi setup, you need to enable SSH on this operating system. To do that you need to navigate to RB Pi settings Start Button > Preferences > Raspberry Pi Configuration > Interfaces > Enable SSH
