@@ -4,31 +4,24 @@ title:  "Blog Post: 0"
 date:   2020-09-04 12:03:41 -0700
 categories: jekyll update
 ---
-<html>
-<head>
-<body>
-<h1>BLOG POST 0: </h1> 
 
-<p>Setting up a Raspberry Pi and Connecting Remotely with SSH.</p>
 
-<p>This is how you set up a Raspberry Pi for the first time and how you can connect to the Raspberry Pi using Secure Shell protocol.</p>
+# Setting up a Raspberry Pi and Connecting Remotely with SSH.
+
+This is how you set up a Raspberry Pi for the first time and how you can connect to the Raspberry Pi using Secure Shell protocol.
 What is a Raspberry Pi?
-A raspberry pi is a small computer about the size of a wallet or credit card. It is extremely cost efficient as it has all the necessary components to support a operating system. </p> 
+A raspberry pi is a small computer about the size of a wallet or credit card. It is extremely cost efficient as it has all the necessary components to support a operating system.  
 
-<p>First, you would need to purchase a Raspberry Pi. I purchased a CanaKit Raspberry Pi 4 - 4GB starter kit from CanaKit on Amazon. You can find it here --> https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9</p>
-<p>It came with:</p>
-    <li>-Raspberry Pi 4</li>
-    <li>-Samsung Evo+ 32GB Micro SD Card</li>
-   <li> -Case (mini tower)</li>
-    <li>-Power Supply (on/off switch)</li>
-    <li>-Micro HDMI to HDMI cable </li>
-    <li>-Heat Sinks for components</li>
-   <li> -Its running a 64-bit quad core processor @ 1.5 Ghz !!
+First, you would need to purchase a Raspberry Pi. I purchased a CanaKit Raspberry Pi 4 - 4GB starter kit from CanaKit on Amazon. You can find it here --> https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9
+It came with:
+-Raspberry Pi 4
+-Samsung Evo+ 32GB Micro SD Card
+-Case (mini tower)
+-Power Supply (on/off switch)
+-Micro HDMI to HDMI cable 
+-Heat Sinks for components
+-Its running a 64-bit quad core processor @ 1.5 Ghz !!
 
 ![image](/assets/images/img1.jpg)![image](/assets/images/img2.jpg)
 
 
-
-</body>
-<head>
-</html>
