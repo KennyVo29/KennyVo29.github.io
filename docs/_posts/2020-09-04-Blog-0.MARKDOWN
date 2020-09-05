@@ -7,12 +7,25 @@ categories: jekyll update
 
 BLOG POST 0: 
 
-Setting up a Raspberry Pi and connecting remotely with SSH.
+Setting up a Raspberry Pi and Connecting Remotely with SSH.
 
 This is how you set up a Raspberry Pi for the first time and how you can connect to the Raspberry Pi using Secure Shell protocol.
 What is a Raspberry Pi?
 A raspberry pi is a small computer about the size of a wallet or credit card. It is extremely cost efficient as it has all the necessary components to support a operating system.  
 
-First, you would need to purchase a Raspberry Pi. I purchased a Raspberry Pi starter kit from CanaKit on Amazon. It came with
+First, you would need to purchase a Raspberry Pi. I purchased a CanaKit Raspberry Pi 4 - 4GB starter kit from CanaKit on Amazon. You can find it here --> https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9
+It came with:
+    -Raspberry Pi 4
+    -Samsung Evo+ 32GB Micro SD Card
+    -Case (mini tower)
+    -Power Supply (on/off switch)
+    -Micro HDMI to HDMI cable 
+    -Heat Sinks for components
+    -Its running a 64-bit quad core processor @ 1.5 Ghz !!
+
+
+
+
+
 
 
