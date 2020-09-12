@@ -15,6 +15,7 @@ Azure Active Directory is a cloud-based Identity management service that handles
 
 What I did. (Assuming that Azure AD is already setup and integrated into your organization)
 First thing you need is to assign a user within the tenant a license. You can do this by following these steps:
+
 -	Navigate to Office 365 home page.
 -	Click on Active Directory from the dashboard.
 -	Select the correct Tenant (organizational unit)
@@ -26,7 +27,9 @@ First thing you need is to assign a user within the tenant a license. You can do
 
 Second thing you need is a new device to setup. We ordered 15 new HP Laptops -15t that had Windows 10 installed on them. Most new laptops come preconfigured to start the “Out of Box Experience” setup. Keep in mind that Azure AD is only compatible for Windows 10 Pro edition or higher (that means if you have Windows 10 Home edition, you will not be able to follow these steps). 
 The OOBE part of the new laptop installation is where we need to go to join this device to the network. After you enter in language and region settings, you should be prompted to join an organization. You will need to use the loginID and password shown in the Office 365 homepage where the users are listed. The device is now connected to your organization's network. 
+
 Alternatively, you can join a laptop that is already setup with windows to the organization’s network by following these steps:
+
 -	Right click the start button.
 -	Click on Settings and navigate to Accounts.
 -	Click on Access work or school.
