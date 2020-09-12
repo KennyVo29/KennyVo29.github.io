@@ -25,7 +25,7 @@ First thing you need is to assign a user within the tenant a license. You can do
 -	Select the Apps tab and enable access to apps for that user. 
 
 Second thing you need is a new device to setup. We ordered 15 new HP Laptops -15t that had Windows 10 installed on them. Most new laptops come preconfigured to start the “Out of Box Experience” setup. Keep in mind that Azure AD is only compatible for Windows 10 Pro edition or higher (that means if you have Windows 10 Home edition, you will not be able to follow these steps). 
-The OOBE part of the new laptop installation is where we need to go to join this device to the network. After you enter in language and region settings, you should be prompted to join an organization. You will need to use the loginID and password shown in the Office 365 homepage where the users are listed. Now the device is connected to your organizations network. 
+The OOBE part of the new laptop installation is where we need to go to join this device to the network. After you enter in language and region settings, you should be prompted to join an organization. You will need to use the loginID and password shown in the Office 365 homepage where the users are listed. The device is now connected to your organization's network. 
 Alternatively, you can join a laptop that is already setup with windows to the organization’s network by following these steps:
 -	Right click the start button.
 -	Click on Settings and navigate to Accounts.
