@@ -6,11 +6,11 @@ categories: jekyll update
 ---
 
 
-# Blog 1:  Setting up new laptops to join Azure AD
+### Blog 1:  Setting up new laptops to join Azure AD
 
 I currently work at a public charter school as an IT Coordinator. One of the tasks I had to complete this week was setting up newly purchased laptops to join our organizations cloud network. We currently have Office 365 which allows us to have access to Azure Active Directory.
 
-### What is Azure Active Directory?
+# What is Azure Active Directory?
 
 Azure Active Directory is a cloud-based Identity management service that handles access for users within the network. It provides companies with a means to manage user login access to all supported applications running on azure. In an example scenario, we have a company that has over 1000+ employees. This company uses multiple serveries that require login ID’s and passwords for each service. The IT administrator now must manage over 3000 user logins. At this point, the IT administrator and employee are overwhelmed. That’s where Azure AD comes in. Azure AD helps companies by providing users with a Single-Sign-On method that allows the user to have access to all cloud and or on-premise services with a single login.
 

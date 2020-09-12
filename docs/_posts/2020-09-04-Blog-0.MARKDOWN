@@ -6,14 +6,14 @@ categories: jekyll update
 ---
 
 
-# Setting up a Raspberry Pi and Connecting Remotely with SSH.
+### Setting up a Raspberry Pi and Connecting Remotely with SSH.
 
 This is how you set up a Raspberry Pi for the first time and how you can connect to the Raspberry Pi using Secure Shell protocol.
 
-What is a Raspberry Pi?
+# What is a Raspberry Pi?
 A raspberry pi is a small computer about the size of a wallet or credit card. It is extremely cost efficient as it has all the necessary components to support an operating system. You can find prices as low as $35.
 
-What is Secure Shell?
+# What is Secure Shell?
 Secure Shell is a software/package that allows users to safely transfer files over insecure networks. SSH encrypts the data that is being sent over the internet (ethernet) between machines. If you were an outside party, you can see if the data is being transferred, how much data it contains, how often it's being sent but you can't see the content of the data at all. You essentially have a private channel of communication with the both machines. When connecting two machines over SSH, you must first open a TCP connection between the two. 
 
 First, you would need to purchase a Raspberry Pi. I purchased a CanaKit Raspberry Pi 4 - 4GB starter kit from CanaKit on Amazon for $99. You can find it here --> (https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9)
