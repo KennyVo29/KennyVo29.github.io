@@ -14,8 +14,8 @@ I currently work at a public charter school as an IT Coordinator. One of the tas
 
 Azure Active Directory is a cloud-based Identity management service that handles access for users within the network. It provides companies with a means to manage user login access to all supported applications running on azure. In an example scenario, we have a company that has over 1000+ employees. This company uses multiple serveries that require login ID’s and passwords for each service. The IT administrator now must manage over 3000 user logins. At this point, the IT administrator and employee are overwhelmed. That’s where Azure AD comes in. Azure AD helps companies by providing users with a Single-Sign-On method that allows the user to have access to all cloud and or on-premise services with a single login.
 
-What I did. (Assuming that Azure AD is already setup and integrated into your organization)
-First thing you need is to assign a user within the tenant a license. You can do this by following these steps:
+# What I did  (Assuming that Azure AD is already setup and integrated into your organization)
+First thing you need to do is to assign a license to a user within your tenant. You can do this by following these steps:
 
 -	Navigate to Office 365 home page.
 -	Click on Active Directory from the dashboard.
