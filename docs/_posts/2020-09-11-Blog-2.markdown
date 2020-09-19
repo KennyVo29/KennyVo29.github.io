@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Blog Post: 2"
+date:   2020-09-18 12:00:41 -0700
+categories: jekyll update
+---
+
+
+This week I had an assignment due for my CIT424 information and System Security that really gave me a headache. My lab assignment was to hack into a server and deface a website. In order to do this, I had to install Metasploitable and Kali Linux on a virtual machine.
+
+### What is Metasploitable
+Metasploitable is a version linux that was designed to be more vulnerable so that it can be used as a means to practice penetration testing skills and test security tools. 
+### What is Kali Linux
+Kali Linux is Debian based linux operating system that is preloaded with a large amount of penetration testing and security auditing software. 
+### What I did
+I first had to install a virtual machine program. The program I used was called VirtualBox. I found the download here. 
+-	https://www.virtualbox.org/wiki/Downloads
+I also needed to download a Kali Linux and Metasploitable image here.
+-	https://www.kali.org/downloads/
+-	https://information.rapid7.com/download-metasploitable-2017.html
+After installing virtualbox, I spun up a Metasploitable virtual machine. I set it up like this:
+metasplotable
+-	In virtual machine, I clicked New and entered a name for my VM which I called it META X. I changed it to Linux machine and Debian 32 bit.
+-	I gave it 2 gigs of memory and 20 gigs of dynamic storage.
+-	I went into settings > system checked enabled I/O APIC, unchecked Enable EFI
+-	I went into settings > storage and mounted the metasploitable file.
+Kali Linux
+-	In virtual machine, clicked new and entered
+
+
+
+
