@@ -20,19 +20,19 @@ It is very important to find the correct serial number or something of that natu
 These are the properties and what I expect to enter for them.
 ![image](/assets/images/createasset.jpg)
 
-- Company – this determines what company this asset is a part. This adds a layer of description that will better help organize your inventory system
+- Company – this determines what company this asset is a part. This adds a layer of description that will better help organize your inventory system.
 - Asset Tag – this is a unique identifier within the asset management system (snipe-it in this case). Like a serial number but it is created on the system level, not the manufacturing level.
 - Model – This is a system level identifier that creates an asset model that allows the user to create an asset that would inherit certain properties from the model. I.e. I made an asset model called DELL Laptop, the asset model would have the attributes called manufacturing and category. When I create an asset and link it to the model, that asset will automatically be labeled as a Dell manufacture and category laptop.
 - Status – This lets you designate a particular state a asset should be in. In this case, I created a status called “Ready to Deploy” which signifies to the organization that this asset is “ready for use” or is “ready to deploy”. This lets the user know if something is available or unavailable.
 - User – this lets you check out the asset to a user or location. This is how the system is able to track a asset to a user. This makes it so that there is a paper trail that shows the organization who is currently using or has used the asset.
 Serial – This is a unique identifier that is made at the manufacturing level. This along with the asset tag allows the system to link the virtual asset with the physical asset.
-- Asset Name  -- This is just a name of the asset, can be whatever you want. Does not have to be unique
-- Purchase Date – lets you specify when the item was purchased 
-- Supplier – lets you specify who the supplier was
-- Order Number – added layer of description, allows you to search for items based on order number
-- Purchase Cost – lets you specify cost 
-- Warranty – this lets you track warrenty
-- Notes – extra area of description
+- Asset Name  -- This is just a name of the asset, can be whatever you want. Does not have to be unique.
+- Purchase Date – lets you specify when the item was purchased. 
+- Supplier – lets you specify who the supplier was.
+- Order Number – added layer of description, allows you to search for items based on order number.
+- Purchase Cost – lets you specify cost. 
+- Warranty – this lets you track warrenty.
+- Notes – extra area of description.
 - Default Location – default location for when a asset is being checked out of.
 - Upload Image – can tie a image to a asset for identification. 
 
