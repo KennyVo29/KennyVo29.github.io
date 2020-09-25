@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Blog Post: 3"
+date:   2020-09-25 12:00:41 -0700
+categories: jekyll update
+---
+
+This week at work, I was tasked to create new assets in our Asset Management System to account our school's learning curriculum. The administrators for our school purchased a bunch of school learning material for grades 3rd to 8th to assist students in virtual learning. These educational resources (books, workbooks, activity books, readers) cost the organization a lot of money so it was very important for me to make sure that all those resources are inventoried and accounted for.
+### What is an Asset Management System?
+An asset management system is a process a company takes to accurately monitor, organize and manage their assets. An asset can be a thing, person or quality that a person or company owns. The way in which companies implement Asset Management Systems can vary, they can be as simple as a google sheet that contains the serial numbers /Product ID to track assets or it can be complex like a program that was built with features that allows for easy input and management of assets and the creation of user accounts to accurately track all movement of items within the database.
+### What I did
+I first needed to access my organizations asset management system. We use Snipe-IT asset management system. You can find the website here (https://snipeitapp.com/).
+This is how my Asset Management System Dashboard looks like.
+![image](/assets/images/Dashboard.jpg)
+
+To get started. I would have to go to the assets tab located here.
+![image](/assets/images/assettab.jpg)
+I would click “Create New” and a “Create Asset” page should open. Within this page you will find a bunch of asset properties you can fill to better track the asset.
+It is very important to find the correct serial number or something of that nature for your asset. We will be using this identifier to track this asset when we enter it into the system. 
+These are the properties and what I expect to enter for them.
+![image](/assets/images/createasset.jpg)
+
+Company – this determines what company this asset is a part. This adds a layer of description that will better help organize your inventory system
+Asset Tag – this is a unique identifier within the asset management system (snipe-it in this case). Like a serial number but it is created on the system level, not the manufacturing level.
+Model – This is a system level identifier that creates an asset model that allows the user to create an asset that would inherit certain properties from the model. I.e. I made an asset model called DELL Laptop, the asset model would have the attributes called manufacturing and category. When I create an asset and link it to the model, that asset will automatically be labeled as a Dell manufacture and category laptop.
+Status – This lets you designate a particular state a asset should be in. In this case, I created a status called “Ready to Deploy” which signifies to the organization that this asset is “ready for use” or is “ready to deploy”. This lets the user know if something is available or unavailable.
+User – this lets you check out the asset to a user or location. This is how the system is able to track a asset to a user. This makes it so that there is a paper trail that shows the organization who is currently using or has used the asset.
+Serial – This is a unique identifier that is made at the manufacturing level. This along with the asset tag allows the system to link the virtual asset with the physical asset.
+Asset Name  -- This is just a name of the asset, can be whatever you want. Does not have to be unique
+Purchase Date – lets you specify when the item was purchased 
+Supplier – lets you specify who the supplier was
+Order Number – added layer of description, allows you to search for items based on order number
+Purchase Cost – lets you specify cost 
+Warranty – this lets you track warrenty
+Notes – extra area of description
+Default Location – default location for when a asset is being checked out of.
+Upload Image – can tie a image to a asset for identification. 
+
+Once you enter in all those properties, you have successfully created a asset within the snipe-it system. When we go to search for this asset, we can search any one of those properties and it should show. 
+![image](/assets/images/assetsearch.jpg)
+We can use the options on the right side to checkout the asset.
