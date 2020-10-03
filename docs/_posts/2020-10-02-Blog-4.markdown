@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Blog Post: 3"
+date:   2020-09-25 12:00:41 -0700
+categories: jekyll update
+---
+
+This week I created a website using html and CSS for one of my other courses. We were instructed to create a webpage consisting of 4 HTML files and 1 CSS file. He gave us artistic control over our webpage so long as we followed his teachings and proper. 
+### What is HTML?
+HTML stands for Hypertext Markup Language which is a language specifically made for web browsers. The Markup Language allows a computer to process a series of text from a document and display parts only the intended text. The computer sees a document that is marked up. It processes the documents and uses the markup parts of the document for instructions on formatting. 
+### What is CSS?
+CSS stands for Cascading Style Sheets which is a language that is designed to provide markup languages with the ability to separate “presentation” and “content”. This style sheet language is responsible for handling the presentation side of a structured document. It allows the developer the ability to specify presentation characteristics like font, layout, colors, organization. 
+What I Did
+I started out by accessing my glitch account. Glitch is a project management tool that allows users to create web application projects with ease. I used to create my website. 
+I accessed my dashboard on my glitch account. This is how it looks:
+![image](/assets/images/Glitch 1.jpg)
+I click on edit for my project. This screen should pop up.
+IMAGE HERE-------------
+These are the 4 HTML and 1 CSS file the was required of me. I used the index.html as my website’s homepage. From that page, I added a nav element to provide browsers/users with a way to travel between pages. 
+This is my outline for the code located in index.html.
+![image](/assets/images/Glitch 2.jpg)
+This is how that code looks when displayed on a browser.
+![image](/assets/images/Glitch 3.jpg)
