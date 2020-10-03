@@ -15,9 +15,9 @@ I started out by accessing my glitch account. Glitch is a project management too
 I accessed my dashboard on my glitch account. This is how it looks:
 ![image](/assets/images/Glitch 1.jpg)
 I click on edit for my project. This screen should pop up.
-IMAGE HERE-------------
+![image](/assets/images/Glitch 2.jpg)
 These are the 4 HTML and 1 CSS file the was required of me. I used the index.html as my website’s homepage. From that page, I added a nav element to provide browsers/users with a way to travel between pages. 
 This is my outline for the code located in index.html.
-![image](/assets/images/Glitch 2.jpg)
-This is how that code looks when displayed on a browser.
 ![image](/assets/images/Glitch 3.jpg)
+This is how that code looks when displayed on a browser.
+![image](/assets/images/Glitch 4.jpg)
