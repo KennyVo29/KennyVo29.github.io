@@ -9,3 +9,7 @@ categories: jekyll update
 WEP (Wired Equivalent Privacy) is a security protocol for wireless networks that claimed to have as much security as a wired network. It was created in 1999 and was widely used to provide security. This protocol uses a stream cipher RC4 to attain confidentiality. Confidentiality is the act of being able to limit the access to information, in this case to protect your data. It uses a CRC-32 checksum to attain integrity. Integrity is the act of assuring accuracy in information, in this case the validity of your data over periods of time. WEP eventually becomes obsolete as it has been found to have many vulnerabilities that make it easily hackable.
 ### WPA
 WPA (Wi-fi Protected Access) is the successor to WEP. It was made to fix all the flaws in WEP. The reason why WPA is much better and more secure than WEP is because it has a much stronger encryption. This encryption is called TKIP (Temporal Key Integrity Protocol). The reason why it’s so strong is because TKIP dynamically changes its keys as it is being used. This dramatically assure data integrity.
+### WPA2
+Even stronger encryption than WPA. WPA2 was created in 2004. It uses AES (Advanced encryption standard) which uses a symmetric encryption algorithm which protects against brute force attacks.
+### WPA3
+Even more secure version of WPA. It was created in 2018. 
