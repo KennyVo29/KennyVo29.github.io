@@ -9,10 +9,7 @@ The presentation I did last week for my class was a success.
  
 I wrote a bit of text that I used for my part of the presentation.
 
-a.	First of all, I’m going to introduce myself and my team members. 
-i.	My name is Kenny Vo and my team members are Chris Der, Darvy Coreas, Namtae Chanachit, and Samuel Vardanyan.
-ii.	For our presentation, we will be covering WEP and WPA attacks. 
-iii.	I will be doing a brief introduction into our presentation, Chris will be covering History, Darvy is covering Examples of attacks, Namtae will be going over how it’s done and also covering a demo. Samuel will cover how to prevent it.
+
 iv.	I’ll start off by briefly introducing WEP and WPA.
 b.	What is IEEE 802
 i.	In order to understand where WEP and WPA came from, we must first learn a little about the Institute of Electrical and Electronics Engineers Standard also known as IEEE 802.
@@ -26,5 +23,7 @@ iii.	It is known for its 64 bit (40-bit key | 5 character = 1 asci = 8 bits) or 
 iv.	----------------------------------------------------------------------------------------------------------
 d.	What is WPA 
 i.	Wi-Fi Protected Access is a security protocol that provides wireless networks with security. The successor to WEP, it was created with the intention to fix all the weaknesses in WEP security algorithm. It was  announced in 2003 by the WIFI Alliance that WEP will be superseded by WPA. 
+    Why is it important to have these protocols?
+Its important to have confidentiality , integrity and availability. To obtain these three principles, we must protect our data using these security algorithms. 
  
 
