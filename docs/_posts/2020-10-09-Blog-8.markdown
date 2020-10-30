@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Blog Post: 8"
+date:   2020-10-30 12:00:41 -0700
+categories: jekyll update
+---
+
+This week I decided to write about Elon Musk’s Neural Link technology and its possible benefits and repercussion to society.
+### Who is Elon Musk
+Elon Musk is the CEO of SpaceX and Tesla. He is the founder of The Boring Company and the co-founder of Neuralink and OpenAI.  He is a engineer, a scientist, industrial designer and a business magnate. Elon Musk’s interests has greatly helped move our technological society forward in a direction that is beneficial to our future. He boasts about creating new longer lasting batteries that can help the world go more green, he talks about colonizing the Moon and Mars to expand our reaches across the cosmos. With his Neuralink, he will venture into yet another field to take the next step towards evolving our species through creative innovations in technology and science.
+### What is Neuralink
+Neuralink is a company that was created in pursuit of neurotechnology. They initially wanted to create this technology to treat serious brain diseases but also aims to reach the human enhancement stage also known as transhumanism. By use of this technology, they can further increase our understanding of the brain and push the frontier of human science.
+### What does this have to do with Technology
+As we grow as a civilization with advance technologies Neuralink will reshape our lives. If the technology gets perfected, we would have the ability to map and track neural activity and improve our understanding of the brain. It will open up a new field of sciences that will allows us to better understand brain diseases and improve our cognitive capabilities. At that point, this technology will become industrialized and the only people who can afford it are the rich and wealthy. This will cause a real social divide as the people who have more money will end up being the individuals who would benefit from this advancement. 
