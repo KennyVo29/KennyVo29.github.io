@@ -8,7 +8,7 @@ categories: jekyll update
 LDAP stands for Lightweight Directory Access Protocol which is a standard industry protocol for accessing and managing directory services on the internet. It was created in 1993 by co-creator Tim Howes. It is a server-side protocol which means that it operates on the server rather than the client’s machine.  This protocol has all sorts of applications, but it is most used for authenticating and storing information on users, groups, and applications. 
 ### How does LDAP work?
 LDAP “sits on top” of the TCP/IP layer. It typically uses two standard ports for specific types of data. If it is unencrypted communication, it uses 389. If its run over TLS-encrypted channel, it uses 636. It’s not set in stone so you could also find LDAP running on non-standard ports.
- ### LDAP can be separated into these parts.
+### LDAP can be separated into these parts.
 It uses a Directory System Agent (directory server) which is a type of network database that stores information in ‘tree entries. It is considered to be a NoSQL (not only SQL) database which similar to relation databases of SQL but it is non-relational. Since this is non-relational database, this means that their table trees are not limited to the restraints of standard SQL relational databases. (related tables can be nested within the same structure.
  LDAP uses LDAP entry to collect information about an entity. A LDAP entry consist of three parts; a distinguished name, a collection of attributes, a collection of object classes.
 A distinguished name is a unique identifier that is used to identify a entry and its position within the directory information tree hierarchy. The data in this system is stored in elements called attributes. Attributes are essentially key-valued pairs.
