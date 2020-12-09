@@ -4,3 +4,35 @@ title:  "Blog Post: 12"
 date:   2020-12-4 12:00:41 -0700
 categories: jekyll update
 ---
+What is D3.JS
+D3.js stands for Data-Driven-Documents which is a JavaScript library that is most commonly used to visualize data. It allows the user to draw meaningful information through visualization that would have been quite impossible to do with a large data set.
+The official site for D3.js can be found here
+-	https://d3js.org/
+How does D3.js work?
+D3 allows the user to use this element called a Scalable Vector Graphics which is an Extensible Markup Language (XML) based vector image format for two-dimensional graphics. D3 manipulates the DOM of these elements to changes its values.
+The Web Standards that are used for D3.js is HTML, DOM, CSS, Javascript
+
+To first begin creating your first D3.js webpage, you first must start a standard html template like this.
+   - <!doctype html>
+   - <html>
+   - <head>
+    - <title>Our Funky HTML Page</title>
+   - </head>
+   - <body>
+    -Content goes here.
+   - </body>
+   - </html>
+Now you need to link the D3.js library to your webpage by adding this code to the HTML file
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+Without using D3.js methods. We can create an SVG element straight in the html file.  We do this by creating the element SVG like this
+<svg width="500" height="500">
+    <rect x="0" y="0" width="300" height="200"></rect>
+</svg>
+
+
+In this piece of code, the SVG is the element that holds all our d3.js visualizations. The width and height attribute is responsible for the dimensions of the SVG element. The SVG is foundation that holds all the SVG elements.  Within SVG, there is a <rect></rect> d3.js element that creates a rectangle. It also takes width and height attributes too. That specifies its shape within the SVG container. 
+One of the neat things about d3.js is its syntax.
+d3.select("p").style("color", "green");
+
+d3.select method locates all ‘p’ elements and changes the color of its contents to green. The .style is a style method for d3.js that lets you change the attributes of a element.
