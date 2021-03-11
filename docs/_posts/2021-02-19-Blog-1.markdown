@@ -4,4 +4,17 @@ title:  "Spring 2021: Blog Post: 1"
 date:   2021-02-19 12:00:41 -0700
 categories: jekyll update
 ---
-Temp Holder
+This week I tried hosting a game server for a game called Valheim that has been gaining a lot of attention. It is an open world survival craft game that could be played with up to 10 players. I had many options to achieve this goal. 
+-I could host the game on a separate computer. (Separate Machine)
+-I could spin up a virtual box. (Virtual Machine)
+-I could spin up a container using docker (Container)
+-I could spin up a EC2 instance on AWS. (Cloud)
+I decided to try to host the game server on my laptop. They provided a guide on how to set up the game server and how to set up port forwarding for my network.
+The first step was to download the Valheim Dedicated Server tool which can be found in the tool section of the steam library page. After this downloaded, it created a directory called Valheim Dedicated Server on my chosen machine. This directory will contain all the necessary files to run the game including the config file that starts the game in a server mode (no graphics).
+After downloading this game. I was instructed to located it on my file explorer and located a .BAT file called “start_headless_server”. This is what the .BAT file contained. 
+ 
+A .BAT file is a batch processing file. It is a plain text file that can contain commands that run various types of tasks. The tasks are typically repetitive in nature such as starting programs and running utilities tools.
+The first command (@echo off) tells the machine to turn off the displaying of entered text on the terminal. The second command ( set SteamAppId=892970 ) sets the required credentials for the server to access the steam network. The third command ( echo “Starting server PRESS CTRL-C to exit” ) is to display the above text to the user. The last command ( valheim_server -nographics -batchmode -name “My server” -port 2456 -world “Dedicated” -password “secret” ) which is responsible for starting the game server. The option (-nographics) boots the game with no visual display. The option (-batchmode) allows for the automation of these tasks. The option (-name) lets me create a name for my server. The option (-port) specifies which port to allow access to this server which is 2456. The option (-world) lets me create a name for my world. The option (-password) lets me create a password for my world.
+I changed the default place holders to my liking. 
+After editing the .BAT file. I as instructed to allow edit inbound and outbound traffic firewall settings. I went and added a new rule in both inbound and outbound traffic allowing access to these ports through my firewall. I set a TCP and UDP rule to allow access from ports 2456-2458 on both ends. After setting that up I was instructed to go into my router settings and configure port forwarding. I was using a TP-LINK Archer 7 Router.  I went to my NAT FORWARDING section in my routers advanced settings and selecting virtual servers. The area where port forwarding is found on your router is different for every router but I tried following the instructions to the best my ability. It asked me to open ports 2456-2458 TCP and UDP. 
+Once finished. I was instructed to to start the .BAT file that we edited earlier to start the server. A small terminal opened up and I was able to see the status of my server which was running. Ideally I would have liked to set up a DMZ but that could be another project for another day.
