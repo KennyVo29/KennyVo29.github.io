@@ -4,17 +4,17 @@ title:  "Spring 2021: Blog Post: 2"
 date:   2021-03-05 12:00:41 -0700
 categories: jekyll update
 ---
-Active Directory
+### Active Directory
 Active Directory is a Microsoft developed directory service that is used for domain network on Windows. The purpose of AD is to provide users and organizations the ability to have centralized domain management where you can authenticate, partition, and manage users and resources in a shared network. Active Directory has quite a few services under its name that make the infrastructure possible to manage domain networks.
 Active Directory Domain Services 
 ADDS also known as Active Directory Domain Services the core to all Windows Domain network. It is responsible for containing information on all users of a domain which includes user information, devices and controls the polices that dictate access to parts of the domain network. 
-Domain Controller
+### Domain Controller
 Domain Controller is the machine that is running the server that handles the Active Directory Domain Services. It acts as the machine that acts as the security officer/judge that must provide security by authenticating request made by individuals within the network. The Domain controller makes sure that the users are who they are and that they have the right credentials to either view, access, manage resources within a network. The DC defines the users access rights (permissions) to resources.
-Active Directory Lightweight Directory Services
+### Active Directory Lightweight Directory Services
 AD LDS also known is Active Directory Lightweight Directory Services is a service that provides directory-enabled applications with a directory service. It is an implementation of LDAP protocol that is used in conjunction with Active Directory Domain Services. It actually is independent of Active Directory and can run concurrently with the main ADDS infrastructure, providing applications with a directory service.
-Certificate Services
+### Certificate Services
 Active Directory Certificate Services is a public key infrastructure that allows the services to be able to create, validate, revoke public key certificates of users within the domain. Public key certificates are e-documents that are used to authenticate ownership of a public key. It holds key information, like key ownership, digital signature. With this service you can use these certificates to encrypt files, emails, and network traffic via virtual private networks/TLS.
-Federation Services
+### Federation Services
 AD FS also known as Active Directory Federation Services is a service that provides users within the domain network to have single sign-on (SSO) feature. This Single Sign-On service allows users to be able to access a variety of web-based services that typically require login per access to be able to access freely with stored credentials. It stores the persons credentials at a central location i.e. the Domain controller where it uses its resources to validate a person’s access to particular service i.e. forums, online shopping, email. Federated Identity is a concept that takes a person’s electronic identity and their attributes and allows for the use of it across multiple identification systems. In order to do this, it dictates the protocols, practices, policies that allow the standardization of information to be used to validate a person’s identity. It is the underlining principle for centralized management and Single-Sign-On services.
-Active Directory Rights Management Services
+### Active Directory Rights Management Services
 AD RMS is a service that is responsible for providing users with a specific role that is in charge of securing and protecting information within the network. It is used by organizations to as a information protection technology that safe-guards electronical information within a network. People with the role can define users access to a particular resource within the network.
