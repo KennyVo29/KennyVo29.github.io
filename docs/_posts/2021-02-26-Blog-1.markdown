@@ -7,11 +7,14 @@ categories: jekyll update
 ### Secure Shell Protocol (SSH)
 Secure Shell Protocol is an application layer protocol that uses public-key cryptography to secure communication over an unsecure network. It does this by encrypting all communication between a client and a server.
 
-### ![image](/assets/images/.jpg)
+### 
+![image](/assets/images/.jpg)
 SSH was first created in 1995 by a research named Tatu Ylönen who worked for the Helsinki University of Technology in Finland.  The first version of SSH was called SSH-1 which was created to replace a previously used protocol that was proven to be unsecure for data transfer over a network. (TELNET, FTP, rsh, etc..) Version 2 was created by “Secsh’ which was the Internet Engineering Task Force. It had major improvements to the protocol like Diffie-Hellman key exchange that increased security over the previous version.
-### ![image](/assets/images/.jpg)
+### 
+![image](/assets/images/.jpg)
 The first thing that happens when you “SSH” to another machine is that you must open up a TCP/IP connection from the client to the host machine(server). SSH breaks down the data into a series of small packets that all have the same ordered content. The content has packet length, padding amount, payload, padding and message authentication code. With these fields, SSH will encrypt everything but packet length and the message authentication code. As more data is being broken down to smaller packets for deliver, each subsequent packet is encrypted using some meta data from the previous packets so that it can ensure integrity during delivery and reassembly.
-### ![image](/assets/images/.jpg)
+### 
+![image](/assets/images/.jpg)
 SSH uses symmetrical encryption, asymmetrical encryption and hashing during different stages of the SSH process to secure data. 
 Symmetrical encryption is when a single key (shared key) is used to encrypt data for involved parties. This means that both parties agree or have access to the key that can be used to decrypt data going between these two machines. It symmetrical because both sides have access to the key that is responsible for decrypting data. 
 Asymmetrical encryption is when data is encrypted and sent in one direction using two keys, private key and public key . The first key is a private key which is associated with its public key and can decrypt any data that is encrypted with either the private key or the public key. This key is to be kept secret from all outside parties which becomes the crux of security system. The pubic key is available to anyone to see and can be used to encrypt data that only the private key can work.

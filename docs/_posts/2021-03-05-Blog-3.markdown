@@ -4,4 +4,38 @@ title:  "Spring 2021: Blog Post: 3"
 date:   2021-03-12 12:00:41 -0700
 categories: jekyll update
 ---
-Temp Holder
+### Amazon Elastic Load Balancing
+Elastic Load Balancing is an Amazon cloud service that provides the user with the ability to control incoming traffic to your cloud infrastructure. It can take incoming traffic to help distribute workloads across multiple targets within your infrastructure i.e. (EC2 instances, containers, IP addresses) It also can analyze the health of whatever target it is attached to. It routes the workload to targets that are healthy so that it can relieve the overall stress on your infrastructure. It has the ability to scale according to the amount of traffic that is funneled into your infrastructure.
+# Listeners
+A Listener is a process that is apart of Amazon Elastic Load Balancing that checks for connection request being made to whatever configuration you set up. These configurations are Protocols: TCP, TLS, UDP, TCP_UDP and Ports: 1-65535. Once attached and configured, these listeners will listen on whatever port you assigned it and whatever protocol you chose. It will wait for request made on those ports/protocol and routes traffic to other targets or target groups. It will determine if the accepting target is healthy and will direct traffic accordingly. It is at the core to which the Load Balancing works.
+# Target Groups
+Target groups are a way for Load Balancers to know where to route traffic. When setting up a load balancer, you must set up both a listener and a target group. Target groups are ways to specify the type of targets you want in that group. If you want your listener to route to instances, you would select the type Instances. If you want your listener to route to IP addresses, you would select type IP. Likewise for Lamda Functions, you would choose Lamda Functions. When creating these target groups, you also setup the health checks. 
+# Health Checks
+Health checks is a process within Amazon Elastic Load Balancing that checks the health of the involved targets within a target group. Load balancers would periodically send request to targets to see how they are. Depending on the configuration, it will perform checks on different parts of the registered targets. They use:
+-	HealthCheckProtocol
+-	HealthCheckPort
+-	HealthCheckPath
+-	HealthCheckTimeoutSeconds
+-	HealthCheckIntervalSeconds
+-	HealthyThresholdCount
+-	UnhealthyThresholdCount
+-	Matcher
+With these settings, it can determine these health statuses
+-	Initial
+-	Healthy
+-	Unhealthy
+-	unused
+-	draining
+-	unavailable
+If the status of the registered targets are anything but Healthy, it will provide a reason code that lets the user determine its state.
+
+### Elastic Load Balancing Types
+# Classic Load Balancers
+The classic load balancers also called ELB for elastic load balancing is a connection-based balancer that operates on both layer 4 (TCP) and layer 7 (HTTPS)
+# Application Load Balancer
+The application load balancer operates on layer 7 (HTTPS) and is a bit more complex than the rest. It allows you to route to multiple applications using a single balancer. The benefits of using a ALB is that it supports Path Conditions, Host Conditions, Supports routing based on fields in a request ie (HTTPS headers), It can route multiple targets in one load balancer.
+# Network Load Balancers
+The Network Load Balancer operates at the fourth layer and can handle huge amounts of network requests. The benefits of using this type of balancer is that it can handle large or volatile amounts of request. It can support Static and Elastic Ips. It can specify targets based on IP addresses, can support multiple applications on a single EC2 Instance. It supports containerized applications and allows to make use of clusters.  
+# Gateway Load Balancers
+A Gateway Load Balancer operates at layer three (Network Layer) and deals with applications like firewalls, prevention systems and intrusion detection. It helps users deploy, scale and manage third party applications so that traffic can flow efficiently between these systems.
+
