@@ -4,4 +4,24 @@ title:  "Spring 2021: Blog Post: 5"
 date:   2021-04-2 12:00:41 -0700
 categories: jekyll update
 ---
-Temp Holder
+### Diffie-Hellman Key Exchange
+A Diffie-Hellman key exchange is a security process that is used in cryptography to secure data over the internet. It provides security through encryption with key pairs by asymmetric encryption. The unique and sought-after feature of this security process is the fact that two parties who have no prior connection or prior knowledge of each other can establish a secure connection in a otherwise unsecure place (ie. The Internet).  This is one level higher in security in comparison to a symmetric encryption where both parties agree on a single shared key to be used to encrypt and decrypt data. The flaw of symmetric encryption is that you must have already confirmed the other parties’ identity and trust them to have used identical keys to encrypt data.
+### Cryptography
+The word Cryptography comes from the Greek work “crypto” meaning hidden secrets and “graphy” meaning to write. Together it means to write hidden secrets. Cryptography has been used in history for thousands of years. It was used by nations in times of war, turmoil where they needed to communicate across large distances using paper and pen without jeopardizing their plans. They would write messages in ciphers so that anyone that is not meant to read the messages contents would not know how to decipher it. The only way to read these messages is if you had the prior knowledge of how the secrets messages were being made. Now adays cryptography does not refer to pen and paper messages. It is now associated with digital-electronic medium. In the case of the internet, the pen and paper turned into digital packets of information in terms of binary numbers. Services throughout technology now use cryptography to secure data that is being sent over the unsecure internet.
+### Symmetric Encryption
+Symmetric Encryption also known as Symmetric-key algorithms is a cryptography method to encrypt plaintext information into ciphertext where that same cryptographic key is used to encrypt plaintext, is also used to decrypt ciphertext. Plaintext is information that has not been encrypted and is open to the public to read. Ciphertext is information that has been processed by a cryptography algorithm to which the information is altered to be unreadable. In the case of symmetric encryption, two parties can exchange information over a insecure internet by means of having a shared key. A shared key is a cryptographic component that allows a user to reverse compute a hashing algorithm to decrypt a ciphertext. For symmetric encryption, both the sender and receiver both have access to this shared key thus allowing the message to be sent and received. The cryptographyic key can be a string of numbers, words, or random characters. It will take the string and blend it into the plaintext to change its content is a drastic way so that it is unreadable. Using the same key, we can reverse the change and see what the original message is.
+Party 1(encrypts) => plain text(unencrypted) -> plain text + secret key(encrypt) => cipher text (encrypted) => Party 2 (decrypts)  cipher text + secret key (decrypt) => plain text (unencrypted)
+Symmetric encryption methods include :
+-	Blowfish
+-	AES
+-	RC4
+-	DES 
+-	RC5
+-	RC6 
+-	AES-128
+-	AES-192 
+-	AES-256
+These are the common encryption methods use to symmetric encryption. Both parties would agree on using one of these methods to encrypt their data. They would blend in the key into plaintext and reverse the process using the chosen method to reveal the original message.
+### Asymmetric Encryption
+A symmetric encryption also known as public key cryptography is a method used to encrypt data using a key pair. Each party will produce a public key and a private key. The public key is derived from the private key. A private key can decrypt all data while the public key cannot. In this process, the private key must be kept secret at all cost. The public key can be viewed by anyone and is sent to the intended recipient (available for anyone to see). A message that is encrypted by a person’s public key can only be decrypted by a private key. The private key and public key are key pairs, that means they are correlated with each other. The public key cannot be reversed engineered to reveal the private key, so the security of the public key is not required. If two parties who have no prior knowledge of each other want to have a secure exchange of information or connection, they can exchange each other’s public key. Using the other parties public key to encrypt data ensures that only the person whose public key is being used can only be decrypted by the other person private key. This is main benefit of this process. Only the person who owns the private key of the key pair can decrypt and read the message.
+
