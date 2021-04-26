@@ -21,6 +21,8 @@ Symmetric encryption methods include :
 -	AES-128
 -	AES-192 
 -	AES-256
+
+###
 These are the common encryption methods use to symmetric encryption. Both parties would agree on using one of these methods to encrypt their data. They would blend in the key into plaintext and reverse the process using the chosen method to reveal the original message.
 ### Asymmetric Encryption
 A symmetric encryption also known as public key cryptography is a method used to encrypt data using a key pair. Each party will produce a public key and a private key. The public key is derived from the private key. A private key can decrypt all data while the public key cannot. In this process, the private key must be kept secret at all cost. The public key can be viewed by anyone and is sent to the intended recipient (available for anyone to see). A message that is encrypted by a person’s public key can only be decrypted by a private key. The private key and public key are key pairs, that means they are correlated with each other. The public key cannot be reversed engineered to reveal the private key, so the security of the public key is not required. If two parties who have no prior knowledge of each other want to have a secure exchange of information or connection, they can exchange each other’s public key. Using the other parties public key to encrypt data ensures that only the person whose public key is being used can only be decrypted by the other person private key. This is main benefit of this process. Only the person who owns the private key of the key pair can decrypt and read the message.
