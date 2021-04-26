@@ -4,4 +4,84 @@ title:  "Spring 2021: Blog Post: 4"
 date:   2021-03-26 12:00:41 -0700
 categories: jekyll update
 ---
-Temp Holder
+### Virtual Private Network
+A virtual private network is a network technology that encrypts connection between the client and the Virtual Private Network Server. It allows a user to secure their information over the internet by encapsulating IP data and transmitting it over to another network (i.e VPN server) using encryption. Instead of routing your data through your local Internet Service Provider, it will route the traffic to one of the Virtual Private Network Servers of your choosing ( depending on what application you use). Many companies use VPN to secure their data and allow virtual access to their network for employees to access resources from across large distances rather than being limited to be physically connect to their network. The main goal of VPN is to secure data over the internet. One of the benefits is that since you are transmitting data to another server, you can actually mask your IP as if you were located somewhere else, thus giving you proxy access to resources that would otherwise be restricted based on your location.
+### Setting up Wireguard
+Wireguard is a VPN software that is considered to be easier to work with (less complex!) than other VPN services. It uses modern “state-of-the-art” cryptography to secure their connection.
+For this tutorial, we are going to set up Digitalocean which is a cloud platform that was used in this tutorial.
+# Server Setuph
+First, we need to create a virtual machine for our server. To create a VM, we need to do the following in Digitalocean
+-	 Select Ubuntu 20.10 Image from their Distributions (this defines what operating system is going to be installed on your VM
+-	Select Basic from their Plans (this defines the specs of your VM)
+-	Select the 5/month Plan(Depending on what credits you have or plan you chose, you can increase the power and potential of your VMs)
+-	Select New York as the Datacenter Region or whatever region you want your VPN to show.
+-	Select SSH keys as the Authentication Method
+-	Create a new SSH key using their option
+Once these settings are created, you can spin up your virtual machine (droplet)
+We will have to log into our server and make sure that it is update by running this command.
+-	apt-get update && apt-get upgrade
+The next step we need to do is to enable IP Forwarding. IP Forwarding is a setting that allows a operating system to be able to accept incoming network packets that is not intended for itself. It will instead not run it through its own network interface but forward it to another.
+To enable IP Forwarding on this server, we must go into our system files and uncomment a specific line. Using your editor of your choice, use this command on your terminal:
+-	Run this command: “sudo vi /etc/sysctl.conf”
+-	In that file, uncomment the line “net.ipv4.ip_forward=1” (this should enable IP Forwarding on this server)
+-	Run this command: “sysctl –p” (to activate changes)
+Now we need to install wireguard:
+-	Run this command:  “apt-get install wireguard”
+-	After installation, navigate to the wireguard directory by running this command: “cd /etc/wireguard”
+Once in the WG directory, we want to generate a public and private key.
+-	Run this command: “umask 077; wg genkey | tea privatekey | wg pubkey > publickey”
+-	Run this command: “cat privatekey” (so that we can put the keys inside the server config file)
+We need to create the conf file
+-	Run this command: “vim /etc/wireguard/wg0.conf” to create this file.
+With that file, we have a basic setup for our server.
+
+We can use this command to test our server and bring up or close the interface or set it up to load on boot, or to start and stop, or check status.
+-	“wg-quick up wg0” (bring up interface)
+-	“wg-quick down” (bring down interface)
+-	“systemctl enable wg-quick@wg0” (bring up on boot)
+-	“systemctl start wg-quick@wg0” (start server)
+-	“systemctl stop wg-quick@wg0” (stop server)
+-	“systemctl status wg-quick@wg0” (check server status)
+# Client Setup
+Using similar steps as for the server, we will need to make sure the machine is up to date and do the following:
+-	“apt-get update && apt-get upgrade“ (update system)
+-	“apt-get install wireguard“ (install Wireguard)
+-	“cd /etc/wireguard” (navigate to wg directory)
+-	“umask 077; wg genkey | tee privatekey | wg pubkey > publickey” (generate public/private key)
+-	“cat privatekey” (put key in config file)
+-	“vim /etc/wireguard/youtube.conf” (create config file)
+Once both client and server side systems are set up, you now can access those conf files and add in each systems information. 
+For the server side machine, the conf file should look like this 
+-	[Interface]
+-	Address = 192.168.69.1/24
+-	PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+-	PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+-	ListenPort = 51820
+-	PrivateKey = <This Ubuntu Servers Private Key>
+
+-	[Peer]
+
+-	# Test Debian Client
+
+-	PublicKey=<The Public Key of the Debian Client>
+
+-	AllowedIPs=192.168.69.2
+
+-	PersistentKeepalive=25
+
+For the client side conf file, it should look like this.
+-	[Interface]
+-	PrivateKey = <This Debian Client Private Key Goes Here>
+-	 Address=192.168.69.2/24
+
+-	[Peer]
+
+-	# Ubuntu Digital Ocean Server
+
+-	PublicKey=<Public Key From Ubuntu Digital Ocean Server>
+
+-	Endpoint=<Public IP of Ubuntu Digital Ocean Server>:51820
+
+-	AllowedIPs = 0.0.0.0/0 # Forward all traffic to server
+
+Once the peer information has been added. We should be able to have a secure connection between server and client. We can test this by using the ping command on each machines IP.
