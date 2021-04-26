@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring 2021: Blog Post: 2"
-date:   2021-02-26 12:00:41 -0700
+date:   2021-03-05 12:00:41 -0700
 categories: jekyll update
 ---
 Active Directory
