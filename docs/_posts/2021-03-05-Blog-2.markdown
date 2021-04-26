@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Spring 2021: Blog Post: 2"
+date:   2021-02-26 12:00:41 -0700
+categories: jekyll update
+---
 Active Directory
 Active Directory is a Microsoft developed directory service that is used for domain network on Windows. The purpose of AD is to provide users and organizations the ability to have centralized domain management where you can authenticate, partition, and manage users and resources in a shared network. Active Directory has quite a few services under its name that make the infrastructure possible to manage domain networks.
 Active Directory Domain Services 
