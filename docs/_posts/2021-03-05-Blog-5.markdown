@@ -5,6 +5,9 @@ date:   2021-04-2 12:00:41 -0700
 categories: jekyll update
 ---
 ### Diffie-Hellman Key Exchange
+
+![image](/assets/images/DHKE.jpg)
+
 A Diffie-Hellman key exchange is a security process that is used in cryptography to secure data over the internet. It provides security through encryption with key pairs by asymmetric encryption. The unique and sought-after feature of this security process is the fact that two parties who have no prior connection or prior knowledge of each other can establish a secure connection in a otherwise unsecure place (ie. The Internet).  This is one level higher in security in comparison to a symmetric encryption where both parties agree on a single shared key to be used to encrypt and decrypt data. The flaw of symmetric encryption is that you must have already confirmed the other parties’ identity and trust them to have used identical keys to encrypt data.
 ### Cryptography
 The word Cryptography comes from the Greek work “crypto” meaning hidden secrets and “graphy” meaning to write. Together it means to write hidden secrets. Cryptography has been used in history for thousands of years. It was used by nations in times of war, turmoil where they needed to communicate across large distances using paper and pen without jeopardizing their plans. They would write messages in ciphers so that anyone that is not meant to read the messages contents would not know how to decipher it. The only way to read these messages is if you had the prior knowledge of how the secrets messages were being made. Now adays cryptography does not refer to pen and paper messages. It is now associated with digital-electronic medium. In the case of the internet, the pen and paper turned into digital packets of information in terms of binary numbers. Services throughout technology now use cryptography to secure data that is being sent over the unsecure internet.
