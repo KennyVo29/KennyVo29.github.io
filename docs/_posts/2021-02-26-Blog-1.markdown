@@ -6,9 +6,9 @@ categories: jekyll update
 ---
 ### Secure Shell Protocol (SSH)
 Secure Shell Protocol is an application layer protocol that uses public-key cryptography to secure communication over an unsecure network. It does this by encrypting all communication between a client and a server.
-
-### 
+ 
 ![image](/assets/images/ssh.jpg)
+
 SSH was first created in 1995 by a research named Tatu Ylönen who worked for the Helsinki University of Technology in Finland.  The first version of SSH was called SSH-1 which was created to replace a previously used protocol that was proven to be unsecure for data transfer over a network. (TELNET, FTP, rsh, etc..) Version 2 was created by “Secsh’ which was the Internet Engineering Task Force. It had major improvements to the protocol like Diffie-Hellman key exchange that increased security over the previous version.
 
 
